@@ -1,9 +1,4 @@
-.. django-project-skeleton documentation master file, created by
-   sphinx-quickstart on Sat Feb 21 16:55:55 2015.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
-
-django-project-skeleton
+django-skeleton
 =======================
 
 **django-project-skeleton** is my skeleton for Django projects. It provides a
@@ -46,7 +41,3 @@ It's been a while, I even missed some Django-releases completely. Some guys at
 Github picked up the project and made some changes to keep it in line with
 Django-releases. I grabbed some code from the, so they are considered
 *Contributors* to this project and should be mentioned here:
-
-
-* `agirardeaudale <https://github.com/agirardeuadale>`_
-* `jmrbcu <https://github.com/jmrbcu>`_

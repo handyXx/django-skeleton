@@ -26,19 +26,19 @@ Path Configuration
 ``STATIC_ROOT``
     The directory to collect static files into. It will be set to
     ``[project_root]/run/static``. Please refer to the `official settings
-    documentation on STATIC_ROOT <https://docs.djangoproject.com/en/2.2/ref/settings/#static-root>`_
-    and `this howto on static files <https://docs.djangoproject.com/en/2.2/howto/static-files/>`_.
+    documentation on STATIC_ROOT <https://docs.djangoproject.com/en/4.0/ref/settings/#static-root>`_
+    and `this howto on static files <https://docs.djangoproject.com/en/4.0/howto/static-files/>`_.
 
 ``MEDIA_ROOT``
     The directory for user-uploaded files. It will be set to
     ``[project_root]/run/media``. Please refer to the `official settings
-    documentation on MEDIA_ROOT <https://docs.djangoproject.com/en/2.2/ref/settings/#media-root>`_.
+    documentation on MEDIA_ROOT <https://docs.djangoproject.com/en/4.0/ref/settings/#media-root>`_.
 
 ``STATICFILES_DIRS``
     Django will look in these locations for additional static
     assets to collect. Our settings module adds ``[project_root]/static`` to
     the list. See the `official settings documentation on STATICFILES_DIRS
-    <https://docs.djangoproject.com/en/2.2/ref/settings/#staticfiles-dirs>`_
+    <https://docs.djangoproject.com/en/4.0/ref/settings/#staticfiles-dirs>`_
     for more details.
 
 ``PROJECT_TEMPLATES``
@@ -50,7 +50,7 @@ Path Configuration
     is controlled with the TEMPLATES directive and represents the old
     TEMPLATE_DIRS directive. See the
     `official settings documentation on TEMPLATES
-    <https://docs.djangoproject.com/en/2.2/ref/settings/#templates>`_
+    <https://docs.djangoproject.com/en/4.0/ref/settings/#templates>`_
     for more details.
 
 Application Configuration
@@ -66,7 +66,7 @@ Application Configuration
     These are the default middleware classes, directly taken from the default
     settings created by ``django-admin startproject``. See the
     `official settings documentation on MIDDLEWARE
-    <https://docs.djangoproject.com/en/2.2/ref/settings/#middleware>`_
+    <https://docs.djangoproject.com/en/4.0/ref/settings/#middleware>`_
     for more details. (Please note: This was used to be called
     *MIDDLEWARE_CLASSES*)
 
@@ -87,12 +87,12 @@ Security Configuration
 ``ADMINS``
     You will have to fill this setting yourself, please refer to `official
     settings documentation on ADMINS
-    <https://docs.djangoproject.com/en/2.2/ref/settings/#admins>`_.
+    <https://docs.djangoproject.com/en/4.0/ref/settings/#admins>`_.
 
 ``MANAGERS``
     You will have to fill this setting yourself, please refer to `official
     settings documentation on MANAGERS
-    <https://docs.djangoproject.com/en/2.2/ref/settings/#managers>`_.
+    <https://docs.djangoproject.com/en/4.0/ref/settings/#managers>`_.
 
 Django Running Configuration
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -104,24 +104,24 @@ Django Running Configuration
 ``ROOT_URLCONF``
     Determines the root URLconf. Set to ``[project_name].urls``. See `official
     settings documentation on ROOT_URLCONF
-    <https://docs.djangoproject.com/en/2.2/ref/settings/#root-urlconf>`_.
+    <https://docs.djangoproject.com/en/4.0/ref/settings/#root-urlconf>`_.
 
 ``SITE_ID``
     *(removed in 1.2)*
     A unique ID of the site. See `official settings documentation on SITE_ID
-    <https://docs.djangoproject.com/en/2.2/ref/settings/#site-id>`_.
+    <https://docs.djangoproject.com/en/4.0/ref/settings/#site-id>`_.
 
 ``STATIC_URL``
     Determines, under which URL static files are served. You will want to
     adjust this in a production scenario. Our default value is ``/static/``.
     See `official settings documentation on STATIC_URL
-    <https://docs.djangoproject.com/en/2.2/ref/settings/#static-url>`_.
+    <https://docs.djangoproject.com/en/4.0/ref/settings/#static-url>`_.
 
 ``MEDIA_URL``
     Determines, under which URL media files are served. You will want to
     adjust this in a production scenario. Our default value is ``/media/``.
     See `official settings documentation on MEDIA_URL
-    <https://docs.djangoproject.com/en/2.2/ref/settings/#media-url>`_.
+    <https://docs.djangoproject.com/en/4.0/ref/settings/#media-url>`_.
 
 Debug Configuration
 ^^^^^^^^^^^^^^^^^^^
@@ -131,7 +131,7 @@ Debug Configuration
     are our common settings, which are shared between all configurations. We
     just want debugging while we are developing, so debugging will be activated
     in *dev.py*. See `official settings documentation on DEBUG
-    <https://docs.djangoproject.com/en/2.2/ref/settings/#debug>`_ for additional
+    <https://docs.djangoproject.com/en/4.0/ref/settings/#debug>`_ for additional
     information.
 
 Internationalization
@@ -172,25 +172,25 @@ Debug Configuration
     *(new in 1.2)*
     Allow all hostnames to be used to access the server/project. See `official
     settings documentation on ALLOWED_HOSTS
-    <https://docs.djangoproject.com/en/2.2/ref/settings/#allowed-hosts>`_.
+    <https://docs.djangoproject.com/en/4.0/ref/settings/#allowed-hosts>`_.
 
 ``LOGIN_URL``
     *(new in 1.3)*
     The URL of Django's built-in login view. See `official
     settings documentation on LOGIN_URL
-    <https://docs.djangoproject.com/en/2.2/ref/settings/#login-url>`_.
+    <https://docs.djangoproject.com/en/4.0/ref/settings/#login-url>`_.
 
 ``LOGIN_REDIRECT_URL``
     *(new in 1.3)*
     Django will redirect the user to this URL after login, if no specific URL is given.
     See `official settings documentation on LOGIN_REDIRECT_URL
-    <https://docs.djangoproject.com/en/2.2/ref/settings/#login-redirect-url>`_.
+    <https://docs.djangoproject.com/en/4.0/ref/settings/#login-redirect-url>`_.
 
 ``LOGOUT_REDIRECT_URL``
     *(new in 1.3)*
     Django will redirect the user to this URL after logout, if no specific URL is given.
     See `official settings documentation on LOGIN_REDIRECT_URL
-    <https://docs.djangoproject.com/en/2.2/ref/settings/#login-redirect-url>`_.
+    <https://docs.djangoproject.com/en/4.0/ref/settings/#login-redirect-url>`_.
 
 Database Configuration
 ^^^^^^^^^^^^^^^^^^^^^^
@@ -224,38 +224,38 @@ The i18n-settings are not included by default. They have to be imported in
     This is the default language of your project. Django will fall back to this
     language, if the localization-middleware can't determine the user's
     preferred language. See `official settings documentation on
-    LANGUAGE_CODE <https://docs.djangoproject.com/en/2.2/ref/settings/#language-code>`_.
+    LANGUAGE_CODE <https://docs.djangoproject.com/en/4.0/ref/settings/#language-code>`_.
 
 ``TIME_ZONE``
     Sets the time zone of this project. See `official settings documentation
     on TIME_ZONE
-    <https://docs.djangoproject.com/en/2.2/ref/settings/#time-zone>`_.
+    <https://docs.djangoproject.com/en/4.0/ref/settings/#time-zone>`_.
 
 ``USE_I18N``
     Activates Django's translation system. See `official settings documentation
     on USE_I18N
-    <https://docs.djangoproject.com/en/2.2/ref/settings/#use-i18n>`_.
+    <https://docs.djangoproject.com/en/4.0/ref/settings/#use-i18n>`_.
 
 ``USE_L10N``
     Activates Django's localization engine. See `official settings documentation
     on USE_L10N
-    <https://docs.djangoproject.com/en/2.2/ref/settings/#use-l10n>`_.
+    <https://docs.djangoproject.com/en/4.0/ref/settings/#use-l10n>`_.
 
 ``USE_TZ``
     Make datetimes timezone aware. See `official settings documentation on
     USE_TZ
-    <https://docs.djangoproject.com/en/2.2/ref/settings/#use-tz>`_.
+    <https://docs.djangoproject.com/en/4.0/ref/settings/#use-tz>`_.
 
 ``LANGUAGES``
     A list of supported languages. Django will only provide translation for
     these. See `official settings documentation on
     LANGUAGES
-    <https://docs.djangoproject.com/en/2.2/ref/settings/#languages>`_.
+    <https://docs.djangoproject.com/en/4.0/ref/settings/#languages>`_.
 
 ``LOCALE_PATHS``
     A list of file system locations, to look for translations. See `official
     settings documentation on LOCALE_PATHS
-    <https://docs.djangoproject.com/en/2.2/ref/settings/#locale-paths>`_.
+    <https://docs.djangoproject.com/en/4.0/ref/settings/#locale-paths>`_.
     Please note: Django's ``LocaleMiddleware`` will automatically look for
     translation files in each apps ``locale`` directory, so they don't need
     to be added here.
